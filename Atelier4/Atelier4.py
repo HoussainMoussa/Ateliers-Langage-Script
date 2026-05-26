@@ -1,11 +1,5 @@
 import socket
 
-# Réponse : les adresses sont vides ('') car socketpair() crée une paire AF_UNIX anonyme.
-# « Anonyme » signifie qu'aucun chemin du système de fichiers n'est associé à ces sockets.
-# Contrairement à un socket TCP/IPv4 qui a une IP + port (ex: ('127.0.0.1', 5000)),
-# un socket Unix anonyme n'a pas besoin d'adresse pour communiquer :
-# le noyau gère la connexion directement en mémoire entre les deux fd.
-
 def afficher_infos(nom, sock):
     print(nom)
     print("  fileno     :", sock.fileno())
@@ -24,6 +18,8 @@ def main():
 if __name__ == "__main__":
     main()
 
+
+#!!!!!! Réponse !!!!!!
 
 #Les adresses sont vides car socket.socketpair() crée une paire de socket AF_UNIX anonyme
 #Anonyme signifie ici qu’ils n’ont ni IP, ni port, ni nom dans le système de fichiers : 

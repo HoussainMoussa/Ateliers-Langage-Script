@@ -31,9 +31,12 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Réponse : Oui, les trois fileno() sont nécessairement différents.
-# Chaque socket est une ressource ouverte dans la table des fichiers du système d'exploitation. Chaque appel à socket() crée une nouvelle entrée et se voit attribuer le plus petit entier disponible (ex: 3, 4, 5).
-# Tant que les sockets restent ouverts (dans le with), leurs fd sont distincts.
+#!!!!!! Réponse !!!!!!
+
+#Oui, les trois fileno() sont nécessairement différents.
+#Chaque socket est une ressource ouverte dans la table des fichiers du système d'exploitation. 
+#Chaque appel à socket() crée une nouvelle entrée et se voit attribuer le plus petit entier disponible (comme montre lee résultat dessous 3,4,5).
+#Tant que les sockets restent ouverts, leurs fd sont distincts.
 
 #Voici la sortie de l'éxecution
 

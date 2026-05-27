@@ -1,5 +1,30 @@
 # Feedback — Atelier 5 (R03 Socketserver, El Houssein MOUSSA)
 
+> **Ré-évaluation à jour** après modification du source.
+
+## Respect de la consigne
+
+**Le fichier était vide précédemment — il est désormais complet**. Tout est
+correct :
+
+- `class ServeurMultiClient(socketserver.ThreadingMixIn, socketserver.TCPServer)`
+  avec mixin en premier ✓
+- `allow_reuse_address = True` ✓
+- `BonjourHandler(StreamRequestHandler)` avec `time.sleep(2)` ✓
+- `with ServeurMultiClient(...)` dans le `__main__` (pas le bug DAUPHIN/MOINE) ✓
+- log par client ✓
+
+Conforme au corrigé.
+
+---
+*Évalué sur le commit `a40125e` (fichier `Réseaux/Socketserver/Atelier5.py`).*
+
+---
+
+## Évaluation précédente (obsolète, commit `9d91b63`)
+
+# Feedback — Atelier 5 (R03 Socketserver, El Houssein MOUSSA)
+
 ## Respect de la consigne
 
 **Fichier vide** : `Réseaux/Socketserver/Atelier5.py` ne contient
@@ -31,3 +56,4 @@ Point clé : le `ThreadingMixIn` doit venir en premier (avant
 
 ---
 *Évalué sur le commit `9d91b63` (fichier `Réseaux/Socketserver/Atelier5.py`).*
+

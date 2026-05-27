@@ -27,8 +27,10 @@ def main():
 
 if __name__ == "__main__":
     main()
-  
-  #Résultats de l'éxécution
+
+
+
+#Résultats de l'éxécution
 
 #/tmp/a.txt                -> ('/tmp', 'a', '.txt')
 #/var/log/archive.tar.gz   -> ('/var/log', 'archive.tar', '.gz')

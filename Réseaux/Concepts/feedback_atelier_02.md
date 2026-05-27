@@ -36,4 +36,4 @@ sortie du bloc, même en cas d'exception.
 - Garde `if __name__ == "__main__":` présente.
 
 ---
-*Évalué sur le commit `075b38a` (fichier `Atelier1/Atelier2.py`).*
+*Évalué sur le commit `eab5f88` (fichier `Réseaux/Concepts/Atelier2.py`).*

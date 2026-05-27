@@ -29,4 +29,4 @@ C'est un rendu modèle, sur le fond et la forme.
   fichier, ce qui aide l'évaluation.
 
 ---
-*Évalué sur le commit `b81aa78` (fichier `Atelier1/Atelier5.py`).*
+*Évalué sur le commit `668e9cc` (fichier `Réseaux/Concepts/Atelier5.py`).*

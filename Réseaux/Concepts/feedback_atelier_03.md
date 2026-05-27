@@ -29,4 +29,4 @@ Les commentaires sont bien dosés et expliquent ce qu'on attend
   l'absence de service ».
 
 ---
-*Évalué sur le commit `1ca1394` (fichier `Atelier1/Atelier3.py`).*
+*Évalué sur le commit `ef1e67c` (fichier `Réseaux/Concepts/Atelier3.py`).*

@@ -24,4 +24,4 @@ Excellent rendu :
 - Commentaires explicatifs au bon niveau de détail.
 
 ---
-*Évalué sur le commit `ac0a76b` (fichier `Atelier1/Atelier6.py`).*
+*Évalué sur le commit `3b6f79f` (fichier `Réseaux/Concepts/Atelier6.py`).*

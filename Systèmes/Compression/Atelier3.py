@@ -1,5 +1,4 @@
 import tarfile
-import tempfile
 from pathlib import Path
 
 
@@ -42,25 +41,24 @@ def lister_fichiers(archive: Path):
 
 def main():
 
-    with tempfile.TemporaryDirectory() as tmp:
+    dossier = Path("source_tmp")
+    dossier.mkdir(exist_ok=True)
 
-        tmp = Path(tmp)
+    archive = Path("archive.tar.gz")
+    cible = Path("cible")
 
-        archive = tmp / "archive.tar.gz"
-        cible = Path("cible")
+    creer_archive(dossier, archive)
+    print(f"Archive créée : {archive}")
 
-        creer_archive(tmp, archive)
-        print(f"Archive créée : {archive}")
+    print("Fichiers dans l'archive :")
+    lister_fichiers(archive)
 
-        print("Fichiers dans l'archive :")
-        lister_fichiers(archive)
+    extraire_archive(archive, cible)
+    print(f"Fichiers extraits dans {cible} :")
 
-        extraire_archive(archive, cible)
-        print(f"Fichiers extraits dans {cible} :")
-
-        for fichier in cible.rglob("*"):
-            if fichier.is_file():
-                print(f"  {fichier}")
+    for fichier in cible.rglob("*"):
+        if fichier.is_file():
+            print(f"  {fichier}")
 
 
 if __name__ == "__main__":
@@ -78,6 +76,9 @@ if __name__ == "__main__":
 #  cible/notes.txt
 #  cible/rapport.txt
 #  cible/log.txt
+
+#ls
+#archive.tar.gz  atelier3.py  cible  source_tmp
 
 #[hmoussa@localhost compression]$ cat cible/notes.txt
 #Contenu du fichier notes.

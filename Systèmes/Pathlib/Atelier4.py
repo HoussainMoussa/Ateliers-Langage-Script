@@ -12,7 +12,7 @@ def decomposer (chemin: str) -> tuple[str, str, str]:
 def afficher(chemin):
 
     dossier, nom, extension = decomposer (chemin)
-    print(f"{chemin:<25} -> ('{dossier}', '{nom}', '{extension}')")
+    print(f"{chemin:<30} -> ('{dossier}', '{nom}', '{extension}')")
 
 def main():
 
@@ -20,6 +20,10 @@ def main():
         "/tmp/a.txt",
         "/var/log/archive.tar.gz",
         "/etc/hosts",
+        "/usr/local/bin/python3",
+        "/var/www/html/index.html",
+        "/home/ada/images/photo.jpeg",
+        "/etc/nginx/nginx.conf",
     ]
 
     for chemin in exemples:
@@ -32,6 +36,10 @@ if __name__ == "__main__":
 
 #Résultats de l'éxécution
 
-#/tmp/a.txt                -> ('/tmp', 'a', '.txt')
-#/var/log/archive.tar.gz   -> ('/var/log', 'archive.tar', '.gz')
-#/etc/hosts                -> ('/etc', 'hosts', '')
+#/tmp/a.txt                  -> ('/tmp', 'a', '.txt')
+#/var/log/archive.tar.gz     -> ('/var/log', 'archive.tar', '.gz')
+#/etc/hosts                  -> ('/etc', 'hosts', '')
+#/usr/local/bin/python3      -> ('/usr/local/bin', 'python3', '')
+#/var/www/html/index.html    -> ('/var/www/html', 'index', '.html')
+#/home/ada/images/photo.jpeg -> ('/home/ada/images', 'photo', '.jpeg')
+#/etc/nginx/nginx.conf       -> ('/etc/nginx', 'nginx', '.conf')
